@@ -1,0 +1,232 @@
+---
+---
+<section id="contacto" class="relative py-24 bg-vertex-blue-dark overflow-hidden">
+  <!-- Background decorations -->
+  <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(16,185,129,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(16,185,129,0.3) 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-1/3 right-0 w-[500px] h-[500px] bg-vertex-emerald/5 rounded-full blur-3xl translate-x-1/2"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-vertex-gold/5 rounded-full blur-3xl -translate-x-1/2"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Left column: Copy -->
+      <div>
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-vertex-gold/30 bg-vertex-gold/5 text-vertex-gold text-xs font-semibold tracking-widest uppercase mb-6">
+          Contacto
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+          Hablemos sobre<br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-vertex-gold to-vertex-gold-light">tu proyecto</span>
+        </h2>
+        <p class="text-gray-400 text-lg leading-relaxed mb-8">
+          Completá el formulario y nuestro equipo se pondrá en contacto con vos a la brevedad para coordinar una consulta personalizada.
+        </p>
+
+        <!-- Trust indicators -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-vertex-emerald/10 border border-vertex-emerald/20 flex items-center justify-center text-vertex-emerald">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p class="text-gray-400 text-sm">Respuesta en menos de 24 horas hábiles</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-vertex-emerald/10 border border-vertex-emerald/20 flex items-center justify-center text-vertex-emerald">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+            </div>
+            <p class="text-gray-400 text-sm">Consulta sin compromiso</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-vertex-emerald/10 border border-vertex-emerald/20 flex items-center justify-center text-vertex-emerald">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <p class="text-gray-400 text-sm">Atención personalizada por especialistas</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: Form -->
+      <div>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mwvarwrq"
+          method="POST"
+          class="relative rounded-2xl border border-white/10 bg-vertex-blue-light p-8 shadow-2xl shadow-black/30"
+        >
+          <!-- Glow accent on top -->
+          <div class="absolute -top-px left-8 right-8 h-px bg-gradient-to-r from-transparent via-vertex-emerald/50 to-transparent"></div>
+
+          <div class="space-y-6">
+            <!-- Nombre completo -->
+            <div>
+              <label for="full-name" class="block text-sm font-medium text-gray-300 mb-2">
+                Nombre completo
+              </label>
+              <input
+                type="text"
+                id="full-name"
+                name="nombre"
+                required
+                placeholder="Ej: Juan Pérez"
+                class="w-full px-4 py-3 rounded-lg bg-vertex-blue border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-vertex-emerald/50 focus:ring-1 focus:ring-vertex-emerald/30 transition-colors"
+              />
+            </div>
+
+            <!-- Teléfono -->
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">
+                Número de teléfono
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="telefono"
+                required
+                placeholder="Ej: +54 11 1234-5678"
+                class="w-full px-4 py-3 rounded-lg bg-vertex-blue border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-vertex-emerald/50 focus:ring-1 focus:ring-vertex-emerald/30 transition-colors"
+              />
+            </div>
+
+            <!-- Motivo de contacto -->
+            <div>
+              <label for="reason" class="block text-sm font-medium text-gray-300 mb-2">
+                Motivo de contacto
+              </label>
+              <textarea
+                id="reason"
+                name="motivo"
+                required
+                maxlength="500"
+                rows="4"
+                placeholder="Contanos brevemente en qué podemos ayudarte..."
+                class="w-full px-4 py-3 rounded-lg bg-vertex-blue border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-vertex-emerald/50 focus:ring-1 focus:ring-vertex-emerald/30 transition-colors resize-none custom-scrollbar"
+              ></textarea>
+              <p class="mt-1.5 text-xs text-gray-600 text-right">
+                <span id="char-count">0</span> / 500 caracteres
+              </p>
+            </div>
+
+            <!-- Submit button -->
+            <button
+              type="submit"
+              id="contact-submit-btn"
+              class="w-full group inline-flex items-center justify-center gap-2 bg-vertex-gold hover:bg-vertex-gold-light text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-base shadow-lg shadow-vertex-gold/20"
+            >
+              <span id="btn-text">Enviar consulta</span>
+              <svg id="btn-arrow" class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+              <!-- Spinner (hidden by default) -->
+              <svg id="btn-spinner" class="hidden h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Success message (hidden by default) -->
+          <div id="form-success" class="hidden text-center py-8">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-vertex-emerald/10 border border-vertex-emerald/30 flex items-center justify-center text-vertex-emerald">
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">¡Mensaje enviado!</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Gracias por contactarnos. Nuestro equipo revisará tu consulta y se pondrá en contacto con vos lo antes posible.
+            </p>
+          </div>
+
+          <!-- Error message (hidden by default) -->
+          <div id="form-error" class="hidden mt-4 p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm text-center">
+            Ocurrió un error al enviar el formulario. Por favor, intentá nuevamente.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.1);
+    border-radius: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.2);
+  }
+</style>
+
+<script>
+  // Character counter
+  const textarea = document.getElementById('reason') as HTMLTextAreaElement;
+  const charCount = document.getElementById('char-count')!;
+
+  textarea?.addEventListener('input', () => {
+    charCount.textContent = String(textarea.value.length);
+    if (textarea.value.length >= 450) {
+      charCount.classList.add('text-vertex-gold');
+      charCount.classList.remove('text-gray-600');
+    } else {
+      charCount.classList.remove('text-vertex-gold');
+      charCount.classList.add('text-gray-600');
+    }
+  });
+
+  // Form submission via fetch (AJAX)
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const submitBtn = document.getElementById('contact-submit-btn')!;
+  const btnText = document.getElementById('btn-text')!;
+  const btnArrow = document.getElementById('btn-arrow')!;
+  const btnSpinner = document.getElementById('btn-spinner')!;
+  const successMsg = document.getElementById('form-success')!;
+  const errorMsg = document.getElementById('form-error')!;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errorMsg.classList.add('hidden');
+
+    // Show loading state
+    submitBtn.setAttribute('disabled', 'true');
+    submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+    btnText.textContent = 'Enviando...';
+    btnArrow.classList.add('hidden');
+    btnSpinner.classList.remove('hidden');
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' },
+      });
+
+      if (response.ok) {
+        // Hide form fields, show success
+        const formFields = form.querySelector('.space-y-6') as HTMLElement;
+        formFields.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch {
+      // Show error
+      errorMsg.classList.remove('hidden');
+      submitBtn.removeAttribute('disabled');
+      submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+      btnText.textContent = 'Enviar consulta';
+      btnArrow.classList.remove('hidden');
+      btnSpinner.classList.add('hidden');
+    }
+  });
+</script>
