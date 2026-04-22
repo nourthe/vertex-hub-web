@@ -1,0 +1,66 @@
+---
+---
+<nav class="fixed top-0 left-0 right-0 z-50 bg-vertex-blue-dark/95 backdrop-blur-sm border-b border-vertex-gold/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="block">
+          <img
+            src="/logo-placeholder.png"
+            alt="Vertex Hub Logo"
+            width="40"
+            height="40"
+            class="h-10 w-10 object-contain"
+          />
+        </a>
+      </div>
+
+      <!-- Nav Links (desktop) -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#servicios" class="text-gray-300 hover:text-vertex-gold transition-colors text-sm font-medium tracking-wide uppercase">Servicios</a>
+        <a href="#nosotros" class="text-gray-300 hover:text-vertex-gold transition-colors text-sm font-medium tracking-wide uppercase">Nosotros</a>
+        <a href="#contacto" class="text-gray-300 hover:text-vertex-gold transition-colors text-sm font-medium tracking-wide uppercase">Contacto</a>
+        <a href="#contacto" class="bg-vertex-gold text-white px-5 py-2 rounded text-sm font-semibold hover:bg-vertex-gold-light transition-colors">
+          Agendar Consulta
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden text-gray-300 hover:text-white p-2"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-vertex-blue-dark border-t border-vertex-gold/10">
+    <div class="px-4 py-4 flex flex-col gap-4">
+      <a href="#servicios" class="text-gray-300 hover:text-vertex-gold transition-colors text-sm font-medium tracking-wide uppercase">Servicios</a>
+      <a href="#nosotros" class="text-gray-300 hover:text-vertex-gold transition-colors text-sm font-medium tracking-wide uppercase">Nosotros</a>
+      <a href="#contacto" class="text-gray-300 hover:text-vertex-gold transition-colors text-sm font-medium tracking-wide uppercase">Contacto</a>
+      <a href="#contacto" class="bg-vertex-gold text-white px-5 py-2 rounded text-sm font-semibold hover:bg-vertex-gold-light transition-colors text-center">
+        Agendar Consulta
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden', isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    btn.setAttribute('aria-label', isOpen ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
+  });
+</script>

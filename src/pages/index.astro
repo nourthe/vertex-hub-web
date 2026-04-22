@@ -1,0 +1,27 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
+import Footer from '../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vertex Hub - Consultora de ingeniería, tecnología y respaldo jurídico. El centro de la gestión eficiente." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Vertex Hub | El centro de la gestión eficiente</title>
+  </head>
+  <body class="bg-vertex-blue-dark text-white antialiased">
+    <Navbar />
+    <main>
+      <Hero />
+      <ServicesGrid />
+    </main>
+    <Footer />
+  </body>
+</html>
